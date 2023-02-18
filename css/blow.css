@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+body{
+	margin: 0;
+	padding: 0;
+  box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+    overflow:hidden;
+    background-color: #1c2545;
+    height: 100vh;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+body {
+    background: #a27bcc;.
+    background: -moz-radial-gradient(center, ellipse cover, #a27bcc 0%, #6c5299 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #a27bcc), color-stop(100%, #6c5299));
+    background: -webkit-radial-gradient(center, ellipse cover, #a27bcc 0%, #6c5299 100%);
+    background: -o-radial-gradient(center, ellipse cover, #a27bcc 0%, #6c5299 100%);
+    background: -ms-radial-gradient(center, ellipse cover, #a27bcc 0%, #6c5299 100%);
+    background: radial-gradient(ellipse at center, #a27bcc 0%, #6c5299 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a27bcc', endColorstr='#6c5299', GradientType=1);
+}
+
+.big{
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    align-items: center;
+}
+
+h1{
+    font-size: 190px;
+    color: white;
+}
+.homeContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home{
+    z-index: 1;
+    display: flex;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    color:white;
+    padding: 20px;
+    background-color: #0a0e1d;
+    border: #f299b9;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0, 0, 10px rgba(0, 0, 0, 0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+
+.home:hover, .home:focus, .home:active{
+    border: solid #fff 2px;
+    box-shadow: 0,0,20px rgba(0, 0, 0, 0,5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+a{
+    text-decoration: none;
+}

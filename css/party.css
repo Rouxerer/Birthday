@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+body{
+	margin: 0;
+	padding: 0;
+  box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+    overflow:hidden;
+    background-color: #1c2545;
+    height: 100vh;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation{
+    0% {
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.partyHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: #1c2545;
+}
+
+h1{
+    color: #fff;
+    font-weight: bold;
+}
+
+.partyContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100% - 80px);
+ 
+}
+
+.hangImage{
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 80px;
+
+}
+
+.first{
+    display: flex;
+    position: absolute;
+    top: 120px;
+    left: 120px;
+    width:120px;
+    height: 120px;
+    border: solid #fff 3px;
+}
+
+.second{
+    display: flex;
+    position: absolute;
+    top: 120px;
+    left:500px;
+    width:120px;
+    height: 125px;
+    border: solid #fff 3px;
+}
+
+.third{
+    display: flex;
+    position: absolute;
+    top: 120px;
+    left:895px;
+    width:120px;
+    height: 125px;
+    border: solid #fff 3px;
+}
+
+.fourth{
+  display: flex;
+  position: absolute;
+  top: 120px;
+  left:1290px;
+  width:120px;
+  height: 125px;
+  border: solid #fff 3px;
+}
+
+.fifth{
+  display: flex;
+  position: absolute;
+  top: 120px;
+  left:1650px;
+  width:120px;
+  height: 125px;
+  border: solid #fff 3px;
+}
+
+
+
+
+body {
+  background: #a27bcc;.
+  background: -moz-radial-gradient(center, ellipse cover, #a27bcc 0%, #6c5299 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #a27bcc), color-stop(100%, #6c5299));
+  background: -webkit-radial-gradient(center, ellipse cover, #a27bcc 0%, #6c5299 100%);
+  background: -o-radial-gradient(center, ellipse cover, #a27bcc 0%, #6c5299 100%);
+  background: -ms-radial-gradient(center, ellipse cover, #a27bcc 0%, #6c5299 100%);
+  background: radial-gradient(ellipse at center, #a27bcc 0%, #6c5299 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a27bcc', endColorstr='#6c5299', GradientType=1);
+}
+/* ============================================== POSITION
+*/
+.cake {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+  width: 100px;
+  height: 100px;
+}
+/* ============================================== BASE
+*/
+.cake:after {
+  background: #ebe3e1;
+  border-radius: 100px;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 2px;
+}
+/* ============================================== Candle
+*/
+.velas {
+  background: #ffffff;
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -2.5px;
+  margin-top: -8.333333333333334px;
+  width: 5px;
+  height: 16.666666666666668px;
+}
+.velas:after,
+.velas:before {
+  background: rgba(255, 0, 0, 0.4);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2.2222222222222223px;
+}
+.velas:after {
+  top: 25%;
+  left: 0;
+}
+.velas:before {
+  top: 45%;
+  left: 0;
+}
+/* ============================================== Fire
+*/
+.fuego {
+  border-radius: 100%;
+  box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  margin-left: -3.3333333333333335px;
+  width: 6.666666666666667px;
+  height: 12.5px;
+}
+.fuego:nth-child(1) {
+  -webkit-animation: fuego 2s infinite;
+}
+.fuego:nth-child(2) {
+  -webkit-animation: fuego 1.5s infinite;
+}
+.fuego:nth-child(3) {
+  -webkit-animation: fuego 1s infinite;
+}
+.fuego:nth-child(4) {
+  -webkit-animation: fuego 0.5s infinite;
+}
+.fuego:nth-child(5) {
+  -webkit-animation: fuego 0.2s infinite;
+}
+/* ============================================== Animation Fire
+*/
+@-webkit-keyframes fuego {
+  0% {
+    background: rgba(254, 248, 97, 0.5);
+    -webkit-transform: translateY(0) scale(1);
+  }
+  50% {
+    background: rgba(255, 50, 0, 0.1);
+    -webkit-transform: translateY(-20px) scale(0);
+  }
+  100% {
+    background: rgba(254, 248, 97, 0.5);
+    -webkit-transform: translateY(0) scale(1);
+  }
+}
+/* ============================================== Frosting
+*/
+.cobertura {
+  background: #ece7e3;
+  border-radius: 50px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  margin-left: -27.77777777777778px;
+  margin-top: -5px;
+  width: 55.55555555555556px;
+  height: 12.5px;
+  z-index: 10;
+}
+.cobertura:after,
+.cobertura:before {
+  background: #ece7e3;
+  border-radius: 100px;
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 10px;
+}
+.cobertura:after {
+  top: 6.666666666666667px;
+  right: 14.285714285714286px;
+}
+.cobertura:before {
+  top: 10px;
+  right: 9.090909090909092px;
+}
+/* ============================================== BIZCOCHO
+*/
+.bizcocho {
+  background: #6d3826;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -25px;
+  width: 50px;
+  height: 33.333333333333336px;
+}
+.bizcocho:after,
+.bizcocho:before {
+  background: rgba(236, 231, 227, 0.6);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+}
+.bizcocho:after {
+  top: 30%;
+  left: 0;
+}
+.bizcocho:before {
+  top: 60%;
+  left: 0;
+}
+/* ============================================== TEXT
+*/
+h2,
+p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  width: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+}
+h2 {
+  color: #6c5299;
+  font-size: 1em;
+  margin-top: 6.8em;
+}
+p {
+  color: rgba(236, 231, 227, 0.6);
+  font-size: 0.8em;
+  line-height: 2em;
+}
+
+h3{
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  width: 100%;
+  color: #6c5299;
+  font-size: 1em;
+  margin-top:0em;
+}
+
+
+.footer{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: calc(100% - 80px);
+  background-color: #fff;
+}
+
+.crowd1{
+  display: flex;
+  position:absolute;
+  top:750px;
+  left:0px;
+  filter: brightness(300%);
+}
+.redirectContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.redirect{
+  z-index: 1;
+  display: flex;
+  width: 150px;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: uppercase;
+  color:white;
+  padding: 20px;
+  background-color: #0a0e1d;
+  border: #f299b9;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0, 0, 10px rgba(0, 0, 0, 0.1);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+}
+
+.redirect:hover, .redirect:focus, .redirect:active
+{
+  border: solid #fff 2px;
+  box-shadow: 0,0,20px rgba(0, 0, 0, 0,5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+a{
+  text-decoration: none;
+}
+.crowd2{
+  display: flex;
+  position:absolute;
+  top:750px;
+  left:250px;
+  filter: brightness(300%);
+}
+.crowd3{
+  display: flex;
+  position:absolute;
+  top:750px;
+  left:500px;
+  filter: brightness(300%);
+}
+
+.crowd4{
+  display: flex;
+  position:absolute;
+  top:900px;
+  left:500px;
+  filter: brightness(300%);
+}
+
+.crowd5{
+  display: flex;
+  position:absolute;
+  top:750px;
+  left:1000px;
+  filter: brightness(300%);
+}
+
+.crowd6{
+  display: flex;
+  position:absolute;
+  top:750px;
+  left:1100px;
+  filter: brightness(300%);
+}
+
+.crowd6{
+  display: flex;
+  position:absolute;
+  top:750px;
+  left:1200px;
+  filter: brightness(300%);
+}
